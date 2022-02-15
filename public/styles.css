@@ -1,0 +1,132 @@
+/*
+  Name: Phoenix Yi
+  Date: November 17, 2020
+  Section: CSE 154 AB
+  This is the css stylesheet file for index.html. Simply to create the consistency on the fonts,
+  colors, and backgrounds.
+*/
+body {
+  background-color: #8a817c;
+}
+
+header, main, footer {
+  margin: 15px;
+  padding: 35px;
+}
+
+button, header, main, footer {
+  background-color: black;
+}
+
+h1, .battleground, .buttons {
+  margin: 30px;
+}
+
+h1, .battleground, .buttons, button, .result-board {
+  border: 5px solid white;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+button, p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, p, button {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding: 30px;
+  font-size: 40px;
+}
+
+.playground, .buttons, #chapter-3 .battleground {
+  display: flex;
+}
+
+#chapter-3 .battleground {
+  align-items: center;
+}
+
+.playground {
+  justify-content: space-evenly;
+}
+
+#chapter-3 h2 {
+  align-self: flex-start;
+}
+
+.buttons, #chapter-3 .battleground {
+  flex-direction: column;
+}
+
+.buttons {
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.battleground {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 800px;
+  width: 1000px;
+}
+
+.playground, .enemies {
+  flex-direction: row;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  width: 180px;
+  height: 70px;
+  font-size: 25px;
+  padding: 10px;
+  margin: 15px;
+}
+
+#chapter-1 img {
+  height: 100px;
+}
+
+#chapter-2 img {
+  height: 150px;
+}
+
+#chapter-3 img {
+  height: 500px;
+}
+
+.wave, #attack, .kill, .health, .round {
+  color: firebrick;
+}
+
+#chapter-1 div, #chapter-2 div, #chapter-3 div {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#chapter-3 .result-board {
+  padding: 20px;
+}

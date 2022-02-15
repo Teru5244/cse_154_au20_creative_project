@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  Name: Phoenix Yi
+  Date: November 17, 2020
+  Section: CSE 154 AB
+  This is the main HTML file for the cp2 interactive js webpage. It is a simple RPG game that have
+  buttons for player to attack and kill some enemies.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dragon Slayer Epic</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dragon Slayer Epic</h1>
+      <p>
+        Welcome to CSE 154 RPG game webpage! It is time for you to complete your legendary task of
+        slaying the dragon and save the great kingdom!
+      </p>
+    </header>
+    <main>
+      <section id="chapter-1">
+        <h2>Chapter 1</h2>
+        <p>
+          You are a young brave adventurer living in a village beside the great kingdom and just
+          step into your adulthood. Your dream is to slay the big dragon for the kingdom and save
+          the residents. Your road of glory just begin and for the first time of your adventure, so
+          let's just kill some slimes for a try.
+        </p>
+        <section class="playground">
+          <section class="battleground">
+            <h3>Wave Number <span class="wave">1</span>!</h3>
+            <section class="enemies">
+              <div class="slime1">
+                <img src="img/slime1.png" alt="Normal Slime">
+                <p>15</p>
+              </div>
+            </section>
+          </section>
+          <section class="buttons">
+            <h3>Command!</h3>
+            <button class="attack">Attack!</button>
+            <button class="next">Next Wave!</button>
+            <button class="next-ch">Next Chapter!</button>
+            <button class="stat">Show Stats!</button>
+            <p class="hidden">You have killed <span class="kill">0</span> Enemy(s)!</p>
+          </section>
+        </section>
+      </section>
+      <section id="chapter-2" class="hidden">
+        <h2>Chapter 2</h2>
+        <p>
+          You start your journey after practicing with a bunch of slimes. On the half way to the
+          castle, you met a bunch of robbers from a well-known organization -- The Treasure Seekers.
+          They are some lawless people gathered together to rob some adventurers and merchants and
+          they are making trouble for you right now. You have to fight, or to be forgotten by the
+          history!
+        </p>
+        <section class="playground">
+          <section class="battleground">
+            <h3>Wave Number <span class="wave">0</span>!</h3>
+            <section class="enemies">
+            </section>
+          </section>
+          <section class="buttons">
+            <h3>Command!</h3>
+            <button class="attack">Attack!</button>
+            <button class="next">Next Wave!</button>
+            <button class="prev-ch">Previous Chapter!</button>
+            <button class="next-ch">Next Chapter!</button>
+            <button class="stat">Show Stats!</button>
+            <p class="hidden">You have killed <span class="kill">0</span> Enemy(s)!</p>
+          </section>
+        </section>
+      </section>
+      <section id="chapter-3" class="hidden">
+        <h2>Chapter 3</h2>
+        <p>
+          After defeating all the bad guys from The Treasure Seekers, you finally find your way to
+          the castle where the dragon resides. But you find out an incredible secret of the king.
+          The dragon actually belongs to the king and the king make use of the dragon to force all
+          the people in the kingdom to obey the king. After discovering the consipiracy, you make
+          your choice to fight for the people.
+        </p>
+        <section class="playground">
+          <section class="battleground">
+            <h3>Round <span class="round">0</span>!</h3>
+            <section class="enemies">
+              <div id="boss">
+                <img src="img/boss.png" alt="The King">
+                <p>1000</p>
+              </div>
+            </section>
+          </section>
+          <section class="buttons">
+            <h3>Command!</h3>
+            <button class="attack">Attack!</button>
+            <button class="magic">Magic Spell!</button>
+            <button class="dodge">dodge and Heal!</button>
+            <button class="restart hidden">Restart!</button>
+            <button class="results hidden">Show Results!</button>
+            <button class="prev-ch">Previous Chapter!</button>
+            <p>Your Health: <span class="health">100</span></p>
+          </section>
+        </section>
+        <p></p>
+      </section>
+    </main>
+    <footer>
+      <p></p>
+      <p>The End</p>
+    </footer>
+  </body>
+</html>
